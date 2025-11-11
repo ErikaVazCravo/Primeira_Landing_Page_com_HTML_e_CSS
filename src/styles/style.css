@@ -1,0 +1,225 @@
+:root {
+    /* Cores roxas */
+    --cor-primaria: #8A2BE2; /* Azul violeta para primária */
+    --cor-secundaria: #252525;
+    --cor-fonte: white;
+    --cor-destaque: #DDA0DD; /* Ameixa clara para destaque/hover */
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    line-height: 1.6;
+}
+
+main {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+p {
+    display: block;
+    margin: 1em 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: var(--cor-fonte);
+    text-overflow: ellipsis;
+}
+
+section {
+    margin: 100px auto;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--cor-primaria); /* Usando roxo primário */
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    text-shadow: 1px 1px 5px rgba(138, 43, 226, 0.5); /* Sombra roxa */
+}
+
+footer .dio-logo {
+    width: 300px;
+}
+
+footer {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(138, 43, 226, .0), rgba(138, 43, 226, .2)); /* Gradiente roxo */
+    border-top: 1px solid rgba(138, 43, 226, .5); /* Borda roxa */
+}
+
+footer a {
+    color: var(--cor-primaria); /* Usando roxo primário */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--cor-destaque); /* Roxo claro para hover */
+}
+
+.banner {
+    /* Ajuste o gradiente e a imagem de fundo se necessário para combinar com o roxo */
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(138, 43, 226, .2), rgba(0, 0, 0, .4)), url(../assets/images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 60px;
+    border-bottom: 1px solid rgba(138, 43, 226, .5); /* Borda roxa */
+}
+
+.banner .banner-content {
+    color: var(--cor-fonte);
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.banner .logo {
+    background-color: rgba(0, 0, 0, .2);
+    height: 260px;
+    width: 260px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.banner .logo img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.banner p {
+    font-size: 1.25rem;
+    margin: 16px 0 24px;
+}
+
+.banner .banner-content button {
+    color: var(--cor-primaria); /* Usando roxo primário */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    /* Gradiente roxo para a borda do botão */
+    border-image: linear-gradient(#8A2BE2, #9932CC); /* Roxo violeta para roxo escuro */
+    border-image-slice: 10;
+    border-radius: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.banner .banner-content button:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.banner .banner-content button a {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#course-content {
+    width: 800px;
+    text-align: center;
+}
+
+#course-content .modules-list {
+    margin: 24px 0;
+}
+
+#course-content .modules-list .module span {
+    color: var(--cor-primaria); /* Usando roxo primário */
+    cursor: pointer;
+}
+
+#course-content .modules-list .module {
+    color: var(--cor-fonte);
+    width: 530px;
+    margin: 0 auto 24px;
+    border: 1px solid var(--cor-primaria); /* Borda roxa */
+    background-color: var(--cor-secundaria);
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#course-content .modules-list .module:hover {
+    background-color: rgba(138, 43, 226, 0.1); /* Roxo transparente para hover */
+    border-color: var(--cor-destaque); /* Roxo claro para hover */
+}
+
+#transform-world {
+    height: 560px;
+    background-size: cover;
+    background-image: url(../assets/images/woman-code.png); /* Considere trocar essa imagem por uma que combine com roxo ou adicionar um overlay roxo */
+    background-attachment: fixed;
+    border-top: 1px solid rgba(138, 43, 226, .5); /* Borda roxa */
+    border-bottom: 1px solid rgba(138, 43, 226, .5); /* Borda roxa */
+    padding: 200px;
+}
+
+#transform-world p {
+    color: var(--cor-fonte);
+    font-weight: 900;
+    font-size: 2.5rem;
+    max-width: 250px;
+    text-shadow: 3px 2px var(--cor-primaria); /* Sombra roxa */
+    position: absolute;
+}
+
+#professional-challenges {
+    text-align: center;
+    width: 800px;
+}
+
+#romario {
+    text-align: center;
+    color: var(--cor-fonte);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+#romario a {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #course-content, #professional-challenges {
+        width: 90%;
+    }
+    .banner .banner-content, .banner .logo {
+        width: 90%;
+    }
+}
